@@ -1,0 +1,39 @@
+{
+    "name": "uccello/email-designer",
+    "description": "Create template for email",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mehdi Rhifar",
+            "email": "mehdi.rhifar@capbarthodia.com"
+        }
+    ],
+    "require": {
+        "uccello/uccello": "^1.0|^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Uccello\\EmailDesigner\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Uccello\\EmailDesigner\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uccello\\EmailDesigner\\Providers\\AppServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
